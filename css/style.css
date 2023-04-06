@@ -1,0 +1,222 @@
+:root {
+  --mainColor: #171717;
+  --secondaryColor: #202020;
+  --acsentColor: #ff9900;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 900px;
+  font-family: "ubuntu", sans-serif;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* navbar */
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 10;
+  transition: 0.8s;
+}
+/* end navbar */
+
+/* hero */
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+#hero {
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 75px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* cta */
+.btn-custom1 {
+  background-color: var(--acsentColor);
+  text-align: center;
+  color: #fff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+}
+
+.cv {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.sosial-icon svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+
+.sosial-icon svg:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.sosial-icon-footer svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+
+.sosial-icon-footer svg:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+/* end hero */
+
+/* about */
+hr {
+  width: 35%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#about {
+  min-height: 300px;
+  font-weight: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+/* end about */
+
+/* skills */
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: #fff;
+}
+
+#skill img {
+  width: 12%;
+  margin: 10px;
+}
+
+#skill .card {
+  background-color: #383838;
+  height: 340px;
+}
+
+#skill .card:hover {
+  background-color: var(--acsentColor);
+}
+
+.skill-konten {
+  margin-top: 120px;
+}
+/* end skills */
+
+/* sertifikat */
+#sertifikat {
+  margin-top: -170px;
+  padding-top: 270px;
+  padding-bottom: 80px;
+  background-color: var(--secondaryColor);
+}
+
+#sertifikat p,
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+#sertifikat img {
+  width: 49%;
+  padding: 10px;
+}
+/* end sertifikat */
+
+/* gallery portfolio */
+#portfolio .container {
+  padding: 80px 10px;
+}
+/* end portfolio */
+
+/* footer */
+footer p {
+  color: #a3a3a3;
+}
+/* end footer */
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+  #hero p {
+    font-size: 0.9rem;
+  }
+  #hero h1 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hero img {
+    width: 60%;
+  }
+  .social-icon {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #hero .row {
+    padding-bottom: 75px;
+  }
+  .btn-custom1 {
+    width: 80%;
+  }
+  #about p {
+    text-align: justify !important;
+  }
+  #skill .card h3 {
+    font-size: 1.3rem;
+  }
+  #skill .card {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  hr {
+    width: 75%;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  #portfolio .col-md-12 {
+    flex-direction: column;
+  }
+}
