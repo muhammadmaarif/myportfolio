@@ -217,9 +217,6 @@ footer p {
   #portfolio .col-md-12 {
     flex-direction: column;
   }
-  #sertifikat .col-md-12 {
-    flex-direction: column !important;
-  }
 }
 @media screen and (max-width: 350px) {
 }
